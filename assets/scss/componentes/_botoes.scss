@@ -1,0 +1,75 @@
+.btn {
+  background: $stfBranco;
+  border: 0;
+  border-radius: 0;
+  color: $stfPreto;
+  font-size: 0.67rem;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 6px;
+
+  &.btn-raised {
+    @include card-box-shadow();
+  }
+
+  &.btn-fluid {
+    width: 100%;
+  }
+
+  &.btn-fundo-escuro {
+    color: $stfAzul !important;
+  }
+
+  &.btn-default-bordered {
+    border: 1px solid $stfAzulClaro;
+    color: $stfAzulClaro;
+  }
+
+  &.btn-upper {
+    text-transform: uppercase;
+  }
+
+  &.com-icone {
+    padding-left: 0;
+    position: relative;
+
+    .icone {
+      background: $stfAzul;
+      color: $stfBranco;
+      float: left;
+      font-size: 1rem;
+      height: 40px;
+      line-height: 40px;
+      top: 0;
+      width: 40px;
+      &:before {
+        position: relative;
+        top: 0;
+        left: -1px;
+      }
+    }
+
+    .texto {
+      padding: 1rem;
+    }
+  }
+
+  &.btn-icone {
+    background: $stfAzul;
+    color: $stfBranco;
+    font-size: 1.125rem;
+    height: 40px;
+    line-height: 40px;
+    padding: 0;
+    width: 40px;
+  }
+  &.btn-caret {
+    background: $stfAzul;
+    color: $stfBranco;
+    font-size: 1.125rem;
+    height: 30px;
+    line-height: 30px;
+    padding: 0;
+    width: 32px;
+  }
+}

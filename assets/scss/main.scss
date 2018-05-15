@@ -1,0 +1,50 @@
+@import "./variaveis/breakpoints";
+@import "./variaveis/cores";
+
+@import "./utils/reset";
+
+// Mixins
+@import "./mixins/background";
+@import "./mixins/sombras";
+
+// Funcoes
+@import "./funcoes/dimensoes";
+
+// Componentes
+@import "./componentes/badges";
+@import "./componentes/botoes";
+@import "./componentes/calendarios";
+@import "./componentes/cards";
+@import "./componentes/inputs";
+@import "./componentes/links";
+@import "./componentes/nav";
+@import "./componentes/breadcrumb";
+@import "./componentes/qlik";
+
+// Seções
+@import "./secoes/agenda-dos-ministros";
+@import "./secoes/audiencias-publicas";
+@import "./secoes/cadastro-newsletter";
+@import "./secoes/estatisticas-processuais";
+@import "./secoes/header";
+@import "./secoes/mapa-do-site";
+@import "./secoes/menu-acessibilidade";
+@import "./secoes/menu-lateral";
+@import "./secoes/noticias";
+@import "./secoes/pesquisa";
+@import "./secoes/rodape";
+@import "./secoes/sob-medida";
+@import "./secoes/tv-justica";
+@import "./secoes/supremo-em-acao";
+
+// Utils
+@import "./utils/alinhamento";
+@import "./utils/backgrounds";
+@import "./utils/bordas";
+@import "./utils/cores";
+@import "./utils/espacamento";
+@import "./utils/dimensoes";
+@import "./utils/tipografia";
+
+// Alto contraste
+@import "./utils/alto-contraste";

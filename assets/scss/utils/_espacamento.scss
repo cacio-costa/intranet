@@ -1,0 +1,217 @@
+@for $i from 0 to 13 {
+  .m-#{$i * 8} {
+    margin: if($i==0, #{$i * 8}, #{$i * 8}px) !important;
+  }
+
+  .m-t-#{$i * 8} {
+    margin-top: if($i==0, #{$i * 8}, #{$i * 8}px) !important;
+  }
+
+  .m-r-#{$i * 8} {
+    margin-right: if($i==0, #{$i * 8}, #{$i * 8}px) !important;
+  }
+
+  .m-b-#{$i * 8} {
+    margin-bottom: if($i==0, #{$i * 8}, #{$i * 8}px) !important;
+  }
+
+  .m-l-#{$i * 8} {
+    margin-left: if($i==0, #{$i * 8}, #{$i * 8}px) !important;
+  }
+
+  .p-#{$i * 8} {
+    padding: if($i==0, #{$i * 8}, #{$i * 8}px) !important;
+  }
+
+  .p-t-#{$i * 8} {
+    padding-top: if($i==0, #{$i * 8}, #{$i * 8}px) !important;
+  }
+
+  .p-r-#{$i * 8} {
+    padding-right: if($i==0, #{$i * 8}, #{$i * 8}px) !important;
+  }
+
+  .p-b-#{$i * 8} {
+    padding-bottom: if($i==0, #{$i * 8}, #{$i * 8}px) !important;
+  }
+
+  .p-l-#{$i * 8} {
+    padding-left: if($i==0, #{$i * 8}, #{$i * 8}px) !important;
+  }
+}
+
+@media all and (max-width: $breakpointPhones - 1) {
+  @for $i from 0 to 13 {
+    .m-xs-#{$i * 8} {
+      margin: if($i==0, #{$i * 8}, #{$i * 8}px) !important;
+    }
+
+    .m-t-xs-#{$i * 8} {
+      margin-top: if($i==0, #{$i * 8}, #{$i * 8}px) !important;
+    }
+
+    .m-r-xs-#{$i * 8} {
+      margin-right: if($i==0, #{$i * 8}, #{$i * 8}px) !important;
+    }
+
+    .m-b-xs-#{$i * 8} {
+      margin-bottom: if($i==0, #{$i * 8}, #{$i * 8}px) !important;
+    }
+
+    .m-l-xs-#{$i * 8} {
+      margin-left: if($i==0, #{$i * 8}, #{$i * 8}px) !important;
+    }
+
+    .p-xs-#{$i * 8} {
+      padding: if($i==0, #{$i * 8}, #{$i * 8}px) !important;
+    }
+
+    .p-t-xs-#{$i * 8} {
+      padding-top: if($i==0, #{$i * 8}, #{$i * 8}px) !important;
+    }
+
+    .p-r-xs-#{$i * 8} {
+      padding-right: if($i==0, #{$i * 8}, #{$i * 8}px) !important;
+    }
+
+    .p-b-xs-#{$i * 8} {
+      padding-bottom: if($i==0, #{$i * 8}, #{$i * 8}px) !important;
+    }
+
+    .p-l-xs-#{$i * 8} {
+      padding-left: if($i==0, #{$i * 8}, #{$i * 8}px) !important;
+    }
+  }
+}
+
+@media all and (min-width: $breakpointPhones) and (max-width: $breakpointMediumDevices - 1) {
+  @for $i from 0 to 13 {
+    .m-sm-#{$i * 8} {
+      margin: if($i==0, #{$i * 8}, #{$i * 8}px) !important;
+    }
+
+    .m-t-sm-#{$i * 8} {
+      margin-top: if($i==0, #{$i * 8}, #{$i * 8}px) !important;
+    }
+
+    .m-r-sm-#{$i * 8} {
+      margin-right: if($i==0, #{$i * 8}, #{$i * 8}px) !important;
+    }
+
+    .m-b-sm-#{$i * 8} {
+      margin-bottom: if($i==0, #{$i * 8}, #{$i * 8}px) !important;
+    }
+
+    .m-l-sm-#{$i * 8} {
+      margin-left: if($i==0, #{$i * 8}, #{$i * 8}px) !important;
+    }
+
+    .p-sm-#{$i * 8} {
+      padding: if($i==0, #{$i * 8}, #{$i * 8}px) !important;
+    }
+
+    .p-t-sm-#{$i * 8} {
+      padding-top: if($i==0, #{$i * 8}, #{$i * 8}px) !important;
+    }
+
+    .p-r-sm-#{$i * 8} {
+      padding-right: if($i==0, #{$i * 8}, #{$i * 8}px) !important;
+    }
+
+    .p-b-sm-#{$i * 8} {
+      padding-bottom: if($i==0, #{$i * 8}, #{$i * 8}px) !important;
+    }
+
+    .p-l-sm-#{$i * 8} {
+      padding-left: if($i==0, #{$i * 8}, #{$i * 8}px) !important;
+    }
+  }
+}
+
+@media all and (min-width: $breakpointMediumDevices) and (max-width: $breakpointLargeDevices - 1) {
+  @for $i from 0 to 13 {
+    .m-md-#{$i * 8} {
+      margin: if($i==0, #{$i * 8}, #{$i * 8}px) !important;
+    }
+
+    .m-t-md-#{$i * 8} {
+      margin-top: if($i==0, #{$i * 8}, #{$i * 8}px) !important;
+    }
+
+    .m-r-md-#{$i * 8} {
+      margin-right: if($i==0, #{$i * 8}, #{$i * 8}px) !important;
+    }
+
+    .m-b-md-#{$i * 8} {
+      margin-bottom: if($i==0, #{$i * 8}, #{$i * 8}px) !important;
+    }
+
+    .m-l-md-#{$i * 8} {
+      margin-left: if($i==0, #{$i * 8}, #{$i * 8}px) !important;
+    }
+
+    .p-md-#{$i * 8} {
+      padding: if($i==0, #{$i * 8}, #{$i * 8}px) !important;
+    }
+
+    .p-t-md-#{$i * 8} {
+      padding-top: if($i==0, #{$i * 8}, #{$i * 8}px) !important;
+    }
+
+    .p-r-md-#{$i * 8} {
+      padding-right: if($i==0, #{$i * 8}, #{$i * 8}px) !important;
+    }
+
+    .p-b-md-#{$i * 8} {
+      padding-bottom: if($i==0, #{$i * 8}, #{$i * 8}px) !important;
+    }
+
+    .p-l-md-#{$i * 8} {
+      padding-left: if($i==0, #{$i * 8}, #{$i * 8}px) !important;
+    }
+  }
+}
+
+@media all and (min-width: $breakpointLargeDevices) {
+  @for $i from 0 to 13 {
+    .m-lg-#{$i * 8} {
+      margin: if($i==0, #{$i * 8}, #{$i * 8}px) !important;
+    }
+
+    .m-t-lg-#{$i * 8} {
+      margin-top: if($i==0, #{$i * 8}, #{$i * 8}px) !important;
+    }
+
+    .m-r-lg-#{$i * 8} {
+      margin-right: if($i==0, #{$i * 8}, #{$i * 8}px) !important;
+    }
+
+    .m-b-lg-#{$i * 8} {
+      margin-bottom: if($i==0, #{$i * 8}, #{$i * 8}px) !important;
+    }
+
+    .m-l-lg-#{$i * 8} {
+      margin-left: if($i==0, #{$i * 8}, #{$i * 8}px) !important;
+    }
+
+    .p-lg-#{$i * 8} {
+      padding: if($i==0, #{$i * 8}, #{$i * 8}px) !important;
+    }
+
+    .p-t-lg-#{$i * 8} {
+      padding-top: if($i==0, #{$i * 8}, #{$i * 8}px) !important;
+    }
+
+    .p-r-lg-#{$i * 8} {
+      padding-right: if($i==0, #{$i * 8}, #{$i * 8}px) !important;
+    }
+
+    .p-b-lg-#{$i * 8} {
+      padding-bottom: if($i==0, #{$i * 8}, #{$i * 8}px) !important;
+    }
+
+    .p-l-lg-#{$i * 8} {
+      padding-left: if($i==0, #{$i * 8}, #{$i * 8}px) !important;
+    }
+  }
+}

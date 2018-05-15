@@ -1,0 +1,32 @@
+.qlik-numero {
+    color: $stfAzulQlik;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    height: 32px;
+    position: relative;
+}
+
+.iframe-qlik-numero {
+    position: absolute;
+    overflow: hidden;
+    top: -7%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    z-index: -1;
+}
+
+.rotulo-qlik-numero {
+    font-size: 0.85rem;
+    margin: 0 8px 8px 8px;
+    text-align: center;
+
+    a {
+      color: $stfAzulEscuro;
+    }
+}
+
+.estatisticas-grafico {
+    height: 385px;
+}

@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+
+/*
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-regular.woff') format('woff'),
+       url('../fonts/Roboto-regular.woff') format('woff2');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto', 'sans-serif';
+  src: url('../fonts/Roboto-italic.woff') format('woff'),
+       url('../fonts/Roboto-italic.woff') format('woff2');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto', 'sans-serif';
+  src: url('../fonts/Roboto-100.woff') format('woff'),
+       url('../fonts/Roboto-100.woff') format('woff2');
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'Roboto', 'sans-serif';
+  src: url('../fonts/Roboto-700.woff') format('woff'),
+       url('../fonts/Roboto-700.woff') format('woff2');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Roboto', 'sans-serif';
+  src: url('../fonts/Roboto-700italic.woff') format('woff'),
+       url('../fonts/Roboto-700italic.woff') format('woff2');
+  font-style: italic;
+  font-weight: bold;
+}
+
+*/
+
+
+.pagina-interna {
+  #texto-pagina-interna {
+    .texto {
+      border-bottom: 0;
+    }
+
+    .texto-titulo {
+      font-weight: bold;
+      font-size: 1.8rem;
+    }
+
+    .texto-gestor {
+      color: #ababab;
+
+      .glyphicon {
+        margin-right: 8px;
+      }
+    }
+
+    .texto-data {
+      color: #ababab;
+
+      .glyphicon {
+        margin-right: 8px;
+      }
+    }
+
+    .texto-conteudo {
+      text-align: justify;
+      text-justify: inter-word;
+      p {
+        font-size: 1rem;
+        line-height: 1.75;
+      }
+    }
+  }
+}

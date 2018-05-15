@@ -1,0 +1,177 @@
+@mixin card() {
+
+  @include card-box-shadow();
+  h3 {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  h4 {
+    font-size: 0.875rem;
+  }
+  small {
+    font-size: 0.75rem;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    li {
+      margin: 8px 0;
+    }
+  }
+
+  &.card-sem-sombra {
+    box-shadow: none;
+  }
+
+  .card-titulo {
+    background: $stfAzulClaro;
+    color: $stfBranco;
+    padding: 16px;
+    text-transform: uppercase;
+  }
+
+  .card-titulo-verde {
+    background: $stfVerdeEscuro;
+    color: $stfVerdeClaro;
+  }
+
+  .card-titulo-vermelho {
+    background: $stfVermelho;
+    color: $stfVermelhoClaro;
+  }
+
+  .card-subtitulo-vermelho {
+    color: $stfVermelho;
+  }
+
+  .card-subtitulo {
+    color: $stfAzulEscuro;
+    font-weight: bold;
+    a {
+        color: $stfAzulEscuro;
+        cursor: pointer;
+    }
+  }
+
+  .card-conteudo {
+    padding: 16px;
+
+    .card-titulo {
+      padding: 8px 16px;
+      text-transform: none;
+    }
+
+    .card-topico-conteudo {
+        color: $stfCinza;
+    }
+
+    .card-media-video {
+      height: 0;
+      padding-bottom: 0% + (9/16 * 100);
+      position: relative;
+
+      iframe {
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+      }
+    }
+
+    .card-media-lista {
+      .media-lista-item {
+        //margin: 16px 0;
+
+        .lista-item-image {
+          height: 80px;
+          width: 80px;
+        }
+
+        .lista-item-texto {
+          color: $stfAzul;
+          a {
+            color: $stfAzul;
+            font-size: 0.75rem;
+          }
+        }
+      }
+    }
+
+    .card-caixa-texto {
+      h4 {
+        font-size: 1rem;
+      }
+
+      background: $stfAzulCinza;
+      padding: 4px 8px;
+    }
+
+    .card-container-imagem {
+      position: relative;
+
+      .card-imagem {
+        position: absolute;
+        right: 20px;
+        top: 8px;
+      }
+    }
+  }
+
+  .card-rodape {
+    background: $stfCinzaClaro;
+  }
+}
+
+.card {
+  @include card();
+}
+
+@media all and (max-width: $breakpointPhones - 1) {
+  .card-xs {
+    @include card();
+    background-color: $stfBranco;
+    margin: 10px;
+  }
+}
+
+@media all and (max-width: $breakpointMediumDevices - 1) {
+  .card-lt-md {
+    @include card();
+  }
+}
+
+.card-secao {
+  background-color: #ECF4F9;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.card-compartilhar {
+  background-color: #f3f3f3;
+
+  > div {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .visualizacoes {
+    color: #a8aaaf;
+    font-size: 0.9rem;
+  }
+
+  .impressao {
+    .btn {
+      border-radius: 4px;
+      height: 30px;
+      line-height: 30px;
+      padding: 0 15px;
+
+      .glyphicon {
+        color: #989ba1;
+      }
+    }
+  }
+}

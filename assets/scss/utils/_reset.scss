@@ -1,0 +1,24 @@
+html {
+  font-size: 16px;
+  @media all and (min-width: $breakpointPhones) {
+    font-size: 16px;
+  }
+  @media screen and (min-resolution: 2dppx) and (min-width: $breakpointPhones) {
+    font-size: 18px;
+  }
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.8rem;
+  @media all and (max-width: $breakpointPhones - 1) {
+    font-size: 1rem;
+  }
+}
+
+/* Sobrescreve media query do bootstrap para valores percentuais */
+@media (min-width: $breakpointPhones) and (max-width: $breakpointLargeDevices) {
+  .container {
+    width: 100%;
+  }
+}

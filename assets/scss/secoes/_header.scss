@@ -1,0 +1,75 @@
+#header {
+  background: $stfBranco;
+  border: 0;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.12);
+  margin: 0;
+
+  .menu-institucional {
+    line-height: 50px;
+  }
+
+  &.navbar {
+    .navbar-header {
+      .navbar-brand {
+        height: 50px;
+        padding: 10px 0;
+      }
+
+      .navbar-toggle {
+        background: $stfAzul;
+        border: 1px solid $stfAzulEscuro;
+        border-radius: 0;
+        color: $stfBranco;
+        height: 30px;
+        line-height: 30px;
+        margin: 10px 0;
+        padding: 0;
+        width: 32px;
+        .icon-bar {
+          background: $stfBranco;
+          margin: 4px auto;
+          width: 16px;
+        }
+      }
+    }
+
+    .navbar-collapse {
+      border: 0;
+    }
+  }
+
+  .nav {
+    > li {
+      > a {
+        color: $stfAzulMenu;
+        padding: 15px 8px;
+        @media (min-width: $breakpointPhones) and (max-width: $breakpointMediumDevices - 1) {
+          font-size: 0.75rem;
+          padding-left: 6px;
+          padding-right: 6px;
+        }
+      }
+      > a:hover {
+        color: $stfCinzaEscuro;
+      }
+    }
+  }
+
+  .container-dropdown-lateral {
+    position: relative;
+
+    .dropdown-lateral {
+      position: absolute;
+      right: 10px;
+      top: 5px;
+    }
+  }
+
+  .dropdown-menu li a {
+      color: $stfPreto;
+  }
+  .dropdown-menu li a:hover {
+    background-color: $stfCinza;
+    color: $stfAzulCinza;
+  }
+}

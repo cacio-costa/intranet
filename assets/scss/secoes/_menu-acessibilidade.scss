@@ -1,0 +1,158 @@
+$height: 30px;
+.menu-acessibilidade {
+  background: $stfPreto;
+  color: $stfBranco;
+
+  img {
+    width: 13px;
+  }
+  * {
+    font-size: 0.65rem;
+    font-weight: 100;
+  }
+
+  span .item-servidores{
+    font-size: 0.75rem;
+  }  
+
+  height: $height;
+  text-align: center;
+
+  .acessibilidade {
+    > div, 
+    > ul {
+      display: inline-block;
+      line-height: $height;
+      margin: auto 8px;
+      font-weight: 600;
+    }
+
+    a {
+      color: $stfBranco;
+      i {
+        font-size: 1rem;
+        top: 2px;
+      }
+    }
+
+    text-align: left;
+
+    .atalhos {
+      list-style: none;
+      padding: 0;
+      font-size:0.6rem;
+
+      li {
+        display: inline-block;
+        margin-right: 8px;
+
+        a {
+          &:hover {
+            text-decoration: none;
+            color: $stfCinzaClaro;
+          }
+          span {
+            background: $stfBranco;
+            color: $stfPreto;
+            padding: 0 4px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+
+  .btn {
+    background: transparent;
+    border: 0;
+    color: $stfBranco;
+    height: $height;
+    line-height: $height;
+    padding: 0;
+    width: 100%;
+    font-size:0.75rem;
+
+    &.btn-default {
+      &:focus,
+      &:active,
+      &:active:focus,
+      &:active:hover,
+      &.dropdown-toggle:hover,
+      &.focus,
+      &.active:focus {
+        background: rgba(255, 255, 255, 0.16);
+        border: 0;
+        color: $stfBranco;
+        outline: 0 none;
+      }
+    }
+  }
+
+  .menu-internacionalizacao {
+    border-right: 1px solid $stfBrancoAlfa40;
+
+    span {
+      font-size:0.75rem;
+    }
+
+    a {
+      font-size:0.75rem;
+    }
+
+    .dropdown {
+      .open {
+        > .btn-default.dropdown-toggle:focus,
+        > .btn-default.dropdown-toggle.focus {
+          background: transparent;
+          border: 0;
+          color: $stfBranco;
+          outline: 0 none;
+        }
+      }
+    }
+  }
+
+  .menu-servidores {
+    border-right: 1px solid $stfBrancoAlfa40;
+
+    span {
+      font-size:0.75rem;
+    }
+
+    a {
+      font-size:0.75rem;
+    }
+
+    .dropdown {
+      .open {
+        > .btn-default.dropdown-toggle:focus,
+        > .btn-default.dropdown-toggle.focus {
+          background: transparent;
+          border: 0;
+          color: $stfBranco;
+          outline: 0 none;
+        }
+      }
+    }
+  }
+
+  .link-borda-direita {
+    border-right: 1px solid $stfBrancoAlfa40;
+  }
+
+  .telefone-stf {
+    line-height: $height;
+        a {
+           color: $stfBranco;
+          &:hover {
+            text-decoration: none;
+            color: $stfBranco;
+          }
+        }
+  }
+
+  div[class*="col-"] {
+    margin: 0;
+    padding: 0;
+  }
+}

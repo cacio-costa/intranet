@@ -1,0 +1,302 @@
+.pesquisa-padrao {
+  min-height: 340px;
+}
+
+
+.pesquisa {
+  @include set-bg-img-1x-2x("../img/interface/top-bg.jpg", "../img/interface/top-bg@2x.jpg") ;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#dc004977', endColorstr='#00ffffff', GradientType=1)";
+  &:before {
+    background: -moz-linear-gradient(-45deg, rgba(0, 73, 119, 0.86), rgba(255, 255, 255, 0) 100%);
+    background: -webkit-linear-gradient(-45deg, rgba(0, 73, 119, 0.86), rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(135deg, rgba(0, 73, 119, 0.76), rgba(255, 255, 255, 0) 100%);
+    content: ' ';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+  }
+  padding: 0 16px;
+  position: relative;
+
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  .label-peticione {
+    font-weight:100;
+  }
+
+  .btn {
+      font-size: 1rem;
+  }
+
+  .pesquisa-conteudo {
+    clear: both;
+    max-width: 900px;
+    margin:0 auto;
+
+    .pesquisa-btn-interna {
+      display: none;
+    }
+
+    .pesquisa-titulo {
+      color: $stfBranco;
+
+      h3 {
+        line-height: 40px;
+      }
+    }
+
+    .pesquisa-titulo-expandida {
+      color: $stfBranco;
+      margin-top: -10px;
+      @media all and (max-width: $breakpointPhones) {
+        margin-top: 30px;
+      }
+    }
+
+    .pesquisa-campos {
+      .campo-container {
+        overflow: hidden;
+        width: 100%;
+
+        .pesquisa-select {
+        //  border: 0;
+          height: 50px;
+          line-height: 50px;
+          padding: 0 8px;
+        }
+
+        .campo-texto {
+        //  border: 0;
+        //  border-radius: 0;
+          height: 50px;
+          padding: 0 40px 0 8px;
+          font-size: 0.9rem;
+        }
+
+        .campo-texto:focus {
+          outline: 0;
+        }
+
+        .botoes-pesquisa-jurisprudencia {
+          border: 0;
+          border-radius: 0;
+          height: 50px;
+          padding: 0 40px 0 8px;
+          font-size: 0.8rem;
+          background-color: white;
+        }
+
+        .botoes-pesquisa-jurisprudencia span {
+          height: 30px;
+          line-height: 26px;
+          color: $stfAzulEscuro;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
+          padding-left: 4px;
+          padding-right: 4px;
+          cursor: pointer;
+          margin-top: 10px;
+          margin-left: 5px;
+        }
+
+        .pesquisa-jurisprudencia-links-inferiores  {
+            line-height: 40px;
+            font-size: 0.8rem;
+        }
+
+        .pesquisa-jurisprudencia-links-inferiores * {
+          color: white;
+        }
+
+        .btn {
+          background: $stfAzulClaro;
+          border: 0;
+          border-radius: 0;
+          color: $stfBranco;
+          height: 50px;
+          line-height: 50px;
+          padding: 0 16px;
+          position: relative;
+          right: 0;
+          top: -50px;
+          min-width: 40px;
+          font-size: 1rem;
+
+          &.btn-default {
+            &:focus,
+            &:active,
+            &:active:focus,
+            &:active:hover,
+            &.dropdown-toggle:hover,
+            &.focus,
+            &.active:focus {
+              background: $stfAzulClaro;
+              border: 0;
+              color: $stfBranco;
+              opacity: 0.8;
+              outline: 0 none;
+            }
+          }
+
+          &.btn-icon-lt-md {
+            @media all and (max-width: $breakpointMediumDevices) {
+              padding: 0;
+              width: 40px;
+            }
+          }
+        }
+
+        .seletores-campo {
+          ul {
+            font-size: 0;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+              display: inline-block;
+              height: 30px;
+              line-height: 30px;
+              margin: 0;
+              margin-right:8px;
+
+              span{
+                background: $stfBrancoAlfa80;
+                color: $stfAzulEscuro;
+                display: block;
+                font-size: 0.75rem;
+                height: 30px;
+                padding: 0 12px;
+                position: relative;
+                top: 0px;
+                cursor: pointer;
+                border-top: 1px solid $stfBrancoAlfa40;
+
+                &:hover {
+                  background-color: $stfAzulClaro;
+                  color: $stfBranco;
+                  text-decoration: none;
+                }
+              }
+
+              span.ativo {
+                background: $stfAzulClaro;
+                color: $stfBranco;
+                border-top: none;
+                font-size: 0.875rem;
+                height: 30px;
+                top: 0;
+              }
+
+              a {
+                background: $stfBrancoAlfa15;
+                color: $stfBranco;
+                display: block;
+                font-size: 0.75rem;
+                height: 30px;
+                padding: 0 15px;
+                position: relative;
+                top: 0px;
+
+                border-top: 1px solid $stfBrancoAlfa40;
+
+                &:hover {
+                  background-color: $stfAzulClaro;
+                  color: $stfBranco;
+                  text-decoration: none;
+                }
+              }
+
+              a.ativo {
+                background: $stfAzulClaro;
+                border-top: none;
+                font-size: 0.875rem;
+                height: 30px;
+                top: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.pagina-interna {
+  .pesquisa {
+    min-height: 0;
+    .pesquisa-conteudo {
+      margin-left: 0;
+      margin-right: 0;
+      max-width: 1170px;
+
+      .pesquisa-btn-interna {
+        display: block;
+      }
+    }
+  }
+}
+
+.pesquisa-menor {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tipo-pesquisa-processo {
+  height: 50px;
+  //background-color: #eeebeb;
+}
+
+.campo-pesquisa-processo {
+  overflow: hidden;
+  input {
+    width: 100%;
+    float: left;
+  }
+  .campo-pesquisa-numero {
+    overflow: hidden;
+  }
+}
+
+.aba-pesquisa {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  select {
+    float: left;
+  }
+  .no-padding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+@media all and (max-width: $breakpointPhones - 1) {
+  .campo-pesquisa-processo {
+    clear: both;
+  }
+  .tipo-pesquisa-processo {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
+@media all and (min-width: $breakpointMediumDevices) {
+  .pesquisa {
+    @include set-bg-img-1x-2x("../img/interface/top-bg.jpg", "../img/interface/top-bg@2x.jpg") ;
+    background-position: center -210px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}

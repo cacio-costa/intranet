@@ -1,0 +1,38 @@
+.sob-medida {
+  background: $stfCinzaClaro;
+  padding: 16px;
+
+  .sob-medida-item {
+    float: left;
+    margin-right: 24px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+    }
+
+    .item-titulo {
+      color: $stfCinza;
+      font-size: 1.188rem;
+      line-height: 1;
+      text-transform: uppercase;
+
+      &.item-titulo-sob-medida {
+        font-size: 1rem;
+        letter-spacing: 0.2px;
+      }
+      &.item-titulo-para-voce {
+        font-size: 1.07rem;
+        letter-spacing: 0.03rem;
+      }
+    }
+  }
+}
+
+h2.titulo-pagina{
+  text-align: center; 
+  margin-bottom: 35px;
+}
