@@ -85,126 +85,127 @@
             <img src="<%= require('assets/img/institucional/logo-STF.png') %>"
                 srcset="<%= require('assets/img/institucional/logo-STF@2x.png') %> 2x" alt="Supremo Tribunal Federal">
           </a>
-          <div id="menu-principal" class="collapse navbar-collapse col-xs-12 navbar-right m-0 p-0">
+          <div id="menu-principal" class="collapse navbar-collapse col-xs-12 navbar-left m-0 p-0">
             <div class="row col-xs-12 m-0 p-0">
               <ul class="nav navbar-nav m-0 p-0">
                 <li class="dropdown-toggle container-dropdown-lateral">
-                  <a href="/ostf" id="oStf">O STF</a>
+                  <a href="#" id="servicos">Serviços</a>
                   <button type="button" class="btn btn-default btn-caret dropdown-lateral visible-xs" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                     <span class="caret"></span>
                   </button>
-                    <ul class="dropdown-menu" aria-labelledby="oStf">
-                      <li><a href="/quemequem">Conheça o STF</a></li>
-                      <li><a href="/erro-404">Visitação Pública</a></li>
-                      <li><a href="/ostf">O STF</a></li>
-                      <li><a href="/sobmedidaadvogados">Sob medida Advogados</a></li>
-                      <li><a href="/sobmedidaestudantes">Sob medida Estudantes</a></li>
-                      <li><a href="/sobmedidaorgaos">Sob medida Instituições</a></li>
-                      <li><a href="/sobmedidacidadaos">Sob medida Cidadãos</a></li>
+                    <ul class="dropdown-menu" aria-labelledby="servicos">
+                      <li>
+                        <a href="#">Gerais</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Saúde</a></li>
+                            <li><a href="#">Deslocamentos</a></li>
+                            <li><a href="#">...</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">Ministros</a></li>
+                      <li>
+                        <a href="#">Servidores</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Ponto eletrônico</a></li>
+                            <li><a href="#">Saúde</a></li>
+                            <li><a href="#">Avaliação</a></li>
+                            <li><a href="#">...</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">Terceirizados</a></li>
+                      <li><a href="#">Estagiários</a></li>
                     </ul>
                 </li>
                 <li class="dropdown-toggle container-dropdown-lateral">
-                  <a href="#" id="estatistica">Estatística</a>
+                  <a href="#" id="sistemas">Sistemas</a>
                   <button type="button" class="btn btn-default btn-caret dropdown-lateral visible-xs" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                     <span class="caret"></span>
                   </button>
-                    <ul class="dropdown-menu" aria-labelledby="estatistica">
-                      <li><a href="#">Acervo</a></li>
-                      <li><a href="#">Decisões</a></li>
-                      <li><a href="estatistica">Estatística</a></li>
+                    <ul class="dropdown-menu" aria-labelledby="sistemas">
+                      <li>
+                        <a href="#">Judicial</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                              <a href="#">Gabinetes</a>
+                              <ul class="dropdown-menu">
+                                  <li><a href="#">Interno</a></li>
+                                  <li><a href="#">Externo</a></li>
+                                  <li><a href="#">Ambos</a></li>
+                              </ul>
+                            </li>
+                            <li><a href="#">Área meio judicial</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#">Administrativo</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Interno</a></li>
+                            <li><a href="#">Externo</a></li>
+                            <li><a href="#">Ambos</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#">Corporativo</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Interno</a></li>
+                            <li><a href="#">Externo</a></li>
+                            <li><a href="#">Ambos</a></li>
+                        </ul>
+                      </li>
                     </ul>
                 </li>
                 <li class="dropdown-toggle container-dropdown-lateral">
-                  <a href="#" id="processos">Processos</a>
+                  <a href="#" id="noticias">Notícias</a>
                   <button type="button" class="btn btn-default btn-caret dropdown-lateral visible-xs" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                     <span class="caret"></span>
                   </button>
-                    <ul class="dropdown-menu" aria-labelledby="processos">
-                      <li><a href="#">Acompanhamento Processual</a></li>
-                      <li><a href="#">Peticionamento Eletrônico</a></li>
-                      <li><a href="/processo">Processo</a></li>
-                      <li><a href="/listarprocessos">Listar processos</a></li>
-                      <li><a href="/listarpartes">Listar partes</a></li>
-                      <li><a href="/listarporparte">Listar processos por parte</a></li>
+                    <ul class="dropdown-menu" aria-labelledby="noticias">
+                      <li><a href="#">Setorizadas</a></li>
+                      <li><a href="#">Geral</a></li>
                     </ul>
                 </li>
                 <li class="dropdown-toggle container-dropdown-lateral">
-                  <a href="/repercussaogeral" id="repercussaogeral">Repercussão Geral</a>
+                  <a href="#" id="acervo">Acervo</a>
                   <button type="button" class="btn btn-default btn-caret dropdown-lateral visible-xs" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                     <span class="caret"></span>
                   </button>
-                    <ul class="dropdown-menu" aria-labelledby="repercussaogeral">
-                      <li><a href="/pesquisaavancada">Temas de Repercussão Geral</a></li>
-                      <li><a href="/votacoes">Ministros</a></li>
-                      <li><a href="/repercussaogeral">Sobrestados</a></li>
-                      <li><a href="/repercussaogeral">Devolução pela sistemática da RG</a></li>
-                      <li><a href="/repercussaogeral">Sobre Repercussão Geral</a></li>
-                      <li><a href="/repercussaogeral">Fórum</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown-toggle container-dropdown-lateral">
-                  <a href="/jurisprudencia" id="jurisprudencia">Jurisprudência</a>
-                  <button type="button" class="btn btn-default btn-caret dropdown-lateral visible-xs" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                    <span class="caret"></span>
-                  </button>
-                    <ul class="dropdown-menu" aria-labelledby="jurisprudencia">
-                      <li><a href="#">Pesquisa</a></li>
-                      <li><a href="#">Inteiro Teor de Acórdãos</a></li>
-                      <li><a href="/jurisprudencia">Jurisprudência</a></li>
-                      <li><a href="/pesquisajurisprudencia">Pesquisa Jurisprudência</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown-toggle container-dropdown-lateral">
-                  <a href="#" id="publicacoes">Publicações</a>
-                  <button type="button" class="btn btn-default btn-caret dropdown-lateral visible-xs" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                    <span class="caret"></span>
-                  </button>
-                    <ul class="dropdown-menu" aria-labelledby="publicacoes">
-                      <li><a href="#">Livraria do supremo</a></li>
-                      <li><a href="#">DJ / DJe</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown-toggle container-dropdown-lateral">
-                  <a href="#" id="biblioteca" >Biblioteca</a>
-                  <button type="button" class="btn btn-default btn-caret dropdown-lateral visible-xs" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                    <span class="caret"></span>
-                  </button>
-                    <ul class="dropdown-menu" aria-labelledby="biblioteca">
-                      <li><a href="#">Consultas</a></li>
-                      <li><a href="#">Biblioteca Digital</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown-toggle container-dropdown-lateral">
-                  <a href="//portal.stf.jus.br/listagem/listarNoticias.asp" id="imprensa">Imprensa</a>
-                  <button type="button" class="btn btn-default btn-caret dropdown-lateral visible-xs" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                    <span class="caret"></span>
-                  </button>
-                    <ul class="dropdown-menu" aria-labelledby="imprensa">
-                      <li><a href="/listagem">Noticias STF</a></li>
-                      <li><a href="/textos">Coberturas Especiais</a></li>
-                      <li><a href="/noticias">Notícias</a></li>
-                      <li><a href="/textocombox">Texto com box lateral</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown-toggle container-dropdown-lateral">
-                  <a href="#" id="legislacao">Legislação</a>
-                  <button type="button" class="btn btn-default btn-caret dropdown-lateral visible-xs" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                    <span class="caret"></span>
-                  </button>
-                    <ul class="dropdown-menu">
-                      <li><a href="#">Planalto e Senado</a></li>
+                    <ul class="dropdown-menu" aria-labelledby="acervo">
+                      <li><a href="#">Jurisprudência</a></li>
                       <li><a href="#">Atos Normativos</a></li>
+                      <li>
+                        <a href="#">Procedimentos</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Setorizado</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">Imagens</a></li>
+                      <li>
+                        <a href="#">Modelos</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Administrativo</a></li>
+                            <li><a href="#">Judiciário</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">Áudio</a></li>
+                      <li><a href="#">Vídeo</a></li>
+                      <li><a href="#">...</a></li>
                     </ul>
                 </li>
                 <li class="dropdown-toggle container-dropdown-lateral">
-                  <a href="/transparencia">Transparência</a>
+                  <a href="#" id="estrutura_organizacional">Estrutura Organizacional</a>
                   <button type="button" class="btn btn-default btn-caret dropdown-lateral visible-xs" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                     <span class="caret"></span>
                   </button>
-                    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="transparencia">
-                      <li><a href="#">Supremo em Ação</a></li>
-                      <li><a href="#">Prestação de Contas</a></li>
-                      <li><a href="/transparencia">Transparência</a></li>
+                </li>
+                <li class="dropdown-toggle container-dropdown-lateral">
+                  <a href="#" id="agenda">Agenda</a>
+                  <button type="button" class="btn btn-default btn-caret dropdown-lateral visible-xs" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <span class="caret"></span>
+                  </button>
+                    <ul class="dropdown-menu" aria-labelledby="agenda">
+                      <li><a href="#">Interno</a></li>
+                      <li><a href="#">Externo</a></li>
+                      <li><a href="#">Serviços</a></li>
                     </ul>
                 </li>
               </ul>
