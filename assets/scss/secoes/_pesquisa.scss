@@ -1,6 +1,3 @@
-.pesquisa-padrao {
-  min-height: 340px;
-}
 
 
 .pesquisa {
@@ -62,6 +59,7 @@
     }
 
     .pesquisa-campos {
+      max-height: 66px;
       .campo-container {
         overflow: hidden;
         width: 100%;
