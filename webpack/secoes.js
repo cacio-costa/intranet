@@ -3,7 +3,8 @@ const htmlWebpack = require('html-webpack-plugin');
 const secoes = [
     'noticias',
     'textos',
-    'erro-404'
+    'erro-404',
+    'alternativo'
 ];
 
 const entries = secoes.map(secao => {
