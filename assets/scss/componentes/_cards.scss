@@ -32,6 +32,20 @@
     text-transform: uppercase;
   }
 
+  .card-titulo-alternativo {
+    color: $stfBranco;
+    padding-bottom: 8px;
+    border-bottom: solid 2px $stfAzulClaro;
+    text-transform: uppercase;
+  }
+
+  .card-titulo-alternativo-span {
+    padding: 8px;
+    background: $stfAzulClaro;
+    font-weight: bold;
+    font-size: 0.8rem;
+  }
+
   .card-titulo-verde {
     background: $stfVerdeEscuro;
     color: $stfVerdeClaro;
